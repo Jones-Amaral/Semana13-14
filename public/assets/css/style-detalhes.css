@@ -1,0 +1,261 @@
+/* Header - Início */
+header {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+header nav div ul {
+    margin-bottom: 0;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #9c0000;
+    font-size: x-large;
+}
+
+.iconLogin {
+    display: none;
+}
+
+header img {
+    float: left;
+
+}
+
+.menuPrincipal {
+    float: left;
+}
+
+.menuPrincipal ul li {
+    display: inline;
+    margin: 10px;
+}
+
+#menuToggle {
+    display: none;
+}
+
+/* Header - Fim */
+
+/* Body - Início */
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.desc {
+    margin: 20px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+#banner {
+    width: 1400px;
+    height: auto;
+}
+
+.banner button a {
+    text-decoration: none;
+    color: #9c0000;
+}
+
+.banner button a:hover {
+    color: white;
+    background-color: #9c0000;
+}
+
+.banner button:hover {
+    border-color: wheat;
+    color: aliceblue;
+    background-color: #9c0000;
+}
+
+.banner button {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+#botaoAssistir,
+#botaoFavoritar {
+    color: #9c0000;
+    width: 130px;
+    height: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    background-color: rgb(168, 164, 164);
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#titulo {
+    color: #9c0000;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    color: #9c0000;
+    margin-left: 20px;
+    text-align: left;
+    font-size: xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: block;
+}
+
+main section div p {
+    color: rgb(197, 190, 188);
+    width: 100%;
+}
+
+main section div a {
+    text-decoration: none;
+    color: #9c0000;
+}
+
+main section div button {
+    color: #9c0000;
+    width: 130px;
+    height: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    background-color: rgb(168, 164, 164);
+    display: inline-block;
+    border-radius: 5px;
+
+}
+
+.imgBannerInicio {
+    width: 100%;
+    text-align: center;
+}
+
+.filme {
+    text-align: center;
+}
+
+main section div button:hover {
+    background-color: #9c0000;
+    border-color: wheat;
+}
+
+main section div a:hover {
+    color: aliceblue;
+}
+
+
+.filmes {
+    margin: 20px;
+    display: inline;
+    max-width: 100%;
+}
+
+#titulo {
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.filmes:hover {
+    opacity: 0.60;
+    transform: scale(1.1);
+}
+
+/* Body - Fim */
+
+/* Footer - Início */
+
+
+.copyright p {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #9c0000;
+    font-size: 20px;
+    display: inline;
+}
+
+.rodape ul li {
+    display: inline;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: #9c0000;
+    font-size: x-large;
+    margin-left: 15px;
+}
+
+/* Footer - Fim */
+
+/* Media Queries */
+@media screen and (max-width: 500px) and (min-width: 0px) {
+    .rodape ul {
+        margin: 10px;
+        padding: 0px;
+        display: flex;
+        ;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rodape ul li {
+        display: block;
+    }
+
+    .menuPrincipal {
+        margin-top: 15px;
+    }
+
+    .banner button {
+        margin: 20px;
+    }
+
+    section article {
+        text-align: center;
+    }
+
+    section article p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #banner {
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+        max-height: 100%;
+    }
+
+
+    #filmes,
+    #series,
+    #docs {
+        display: none;
+    }
+
+    .iconLogin {
+        display: block;
+    }
+
+}

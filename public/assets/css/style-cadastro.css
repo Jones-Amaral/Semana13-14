@@ -5,6 +5,10 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    margin-top: 80px;
+}
+
 /* Cabeçalho início */
 header .menu-principal ul a {
     text-decoration: none;
@@ -13,11 +17,16 @@ header .menu-principal ul a {
     font-size: x-large;
 }
 
+.user-mobile {
+    display: none;
+}
+
 header {
     position: fixed;
     background-color: black;
     width: 100%;
     height: fit-content;
+
 }
 
 .menu-principal ul li {
@@ -34,61 +43,74 @@ header #userToggle {
 
 /* Cabeçalho fim */
 
-/* Menu Lateral Início */
-
-
-
-body aside ul li a {
-    text-decoration: none;
-    color: inherit;
-}
-
-body aside ul li {
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    color: #9c0000;
-    font-size: 25px;
-    text-decoration: underline;
-    text-decoration-color: black;
-    text-align: center;
-}
-
-.botaook {
-    margin-top: 20px;
-    align-self: center;
-}
-
-/* Menu Lateral Fim */
-
 /* Main */
 
-.banner {
-    display: block;
+.formulario-container {
+    margin-top: 80px;
+    display: grid;
     width: 100%;
-    height: 400px;
+    height: 100%;
+    text-align: center;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
-.position-absolute {
-    top: -50px;
-    left: 30px;
+.formulario-container .centro {
+    background-color: #b8adad;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
-.loginInfo {
-    margin-top: 70px;
+input {
+    border-radius: 5px;
+    border-color: #9c0000;
+    width: 100%;
+    max-width: 80%;
+
 }
 
-.comInfo {
-    margin-top: 50px;
+.btnInserir {
+    color: #000000;
+    width: 100%;
+    max-width: 120px;
+    border-radius: 5px;
+    border-color: #9c0000;
+    margin: 20px 0;
+}
+
+.tabela {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
     text-align: center;
 }
 
-h1 {
+table {
+    width: 100%;
+margin-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+}
 
+tr:nth-child(even) {
+    background-color: #b8adad;
+}
+
+td,
+th {
+    border: 1px solid #9c0000;
+    padding: 8px;
+}
+
+/* Textos */
+h1 {
+    color: #9c0000;
     text-align: center;
 }
 
 h2 {
+    text-align: center;
     color: #9c0000;
     margin-left: 15px;
     text-align: left;
@@ -99,31 +121,14 @@ h2 {
 }
 
 h3 {
-    color: #808080;
-    padding-left: 10px;
+    color: #000000;
+    padding: 10px;
     font-size: 25px;
 }
 
-.descricao-limitada {
-    display: -webkit-box;
-    -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+/* Textos Fim */
 
-/* Container Destaque */
-main section p {
-    color: white;
-}
-
-.card-img-top:hover {
-    transform: scale(1.1);
-}
-
-/* Fim container */
-
-
+/* Main Fim */
 /* Rodapé início */
 
 
@@ -191,28 +196,6 @@ main section p {
         overflow-x: hidden;
     }
 
-    body section .container {
-        align-items: center;
-        text-align: center;
-        text-align: justify;
-    }
-
-    body section .container img {
-        margin: 0 auto;
-    }
-
-    header img {
-        display: flex;
-        float: left;
-        align-content: baseline;
-    }
-
-    header nav {
-        margin-left: 0px;
-        width: 100%;
-        height: 100%;
-    }
-
     header nav .menu-principal {
         display: none;
 
@@ -220,6 +203,7 @@ main section p {
 
     main {
         margin: 0px;
+        margin-top: 80px;
     }
 
     .categorias ul {
