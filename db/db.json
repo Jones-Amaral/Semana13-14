@@ -1,43 +1,11 @@
 {
   "filmes": [
     {
-      "adult": false,
-      "backdrop_path": "/ybBIIzDL1B9yH8OVFav81JTZmoN.jpg",
-      "genre_ids": [
-        53,
-        28
-      ],
-      "id": 1233069,
-      "original_language": "de",
-      "original_title": "Exterritorial",
-      "overview": "O filho da ex-militar Sara desapareceu em um consulado americano. Ela fará de tudo para encontrá-lo, inclusive encarar uma conspiração sombria.",
-      "popularity": 567.4906,
-      "poster_path": "/wqllCospPViEt7AeYIl4ZskKdSj.jpg",
-      "release_date": "2025-04-29",
-      "title": "Exterritorial",
-      "video": false,
-      "vote_average": 6.913,
-      "vote_count": 75
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/44YfHklKam8COMUxDZop2Lnp0CS.jpg",
-      "genre_ids": [
-        28,
-        80,
-        53
-      ],
-      "id": 668489,
-      "original_language": "en",
-      "original_title": "Havoc",
+      "title": "Exemplo de Alteração CRUD",
       "overview": "Um roubo de drogas sai do controle, levando um policial a encarar o submundo de uma cidade corrupta para salvar o filho de um político importante.",
-      "popularity": 521.8143,
-      "poster_path": "/8TcTdvMOZvZ6kDLEm0SZlkNm9Vu.jpg",
       "release_date": "2025-04-24",
-      "title": "Caos e Destruição",
-      "video": false,
-      "vote_average": 6.6,
-      "vote_count": 448
+      "poster_path": "/8TcTdvMOZvZ6kDLEm0SZlkNm9Vu.jpg",
+      "id": 668489
     },
     {
       "adult": false,
@@ -68,7 +36,7 @@
       "id": 1471014,
       "original_language": "en",
       "original_title": "Van Gogh by Vincent",
-      "overview": "",
+      "overview": "Documentário ainda sem sinopse oficial divulgada, mas deve explorar a vida e a obra do pintor Vincent van Gogh a partir de suas próprias palavras e cartas.",
       "popularity": 461.9303,
       "poster_path": "/z73X4WKZghBh5fri31o8P6vBEB2.jpg",
       "release_date": "2025-03-26",
@@ -158,241 +126,32 @@
       "vote_count": 318
     },
     {
-      "adult": false,
-      "backdrop_path": "/jhL4eTpccoZSVehhcR8DKLSBHZy.jpg",
-      "genre_ids": [
-        28,
-        53,
-        878
-      ],
-      "id": 822119,
-      "original_language": "en",
-      "original_title": "Captain America: Brave New World",
-      "overview": "Após se encontrar com o recém-eleito presidente dos EUA, Thaddeus Ross, Sam se vê no meio de um incidente internacional. Ele deve descobrir o motivo por trás de uma conspiração global nefasta antes que o verdadeiro gênio faça o mundo inteiro ser dominado pelo vermelho.",
-      "popularity": 260.3523,
-      "poster_path": "/t81XT7pvqOIRwZyJ51LADDdPQ5p.jpg",
-      "release_date": "2025-02-12",
-      "title": "Capitão América: Admirável Mundo Novo",
-      "video": false,
-      "vote_average": 6.158,
-      "vote_count": 1704
+      "title": "Corra!",
+      "overview": "Agora que Chris e sua namorada, Rose, chegaram à fase de conhecer os pais no namoro, ela o convida para um fim de semana no interior com Missy e Dean. A princípio, Chris acha que o comportamento excessivamente agradável dos dois como tentativas nervosas de lidar com o relacionamento inter-racial da filha, mas, conforme o fim de semana avança, uma série de descobertas cada vez mais perturbadoras o levam a uma verdade que ele jamais poderia ter imaginado.",
+      "release_date": "2017-02-24",
+      "poster_path": "/7hmmKIWDHi7jzOiGzffZesXKKfp.jpg",
+      "id": 1471015
     },
     {
-      "adult": false,
-      "backdrop_path": "/bFmziv84NfEVEGTK8c6EVY3bxve.jpg",
-      "genre_ids": [
-        28,
-        80,
-        9648,
-        53
-      ],
-      "id": 1180906,
-      "original_language": "en",
-      "original_title": "Desert Dawn",
-      "overview": "",
-      "popularity": 224.4353,
-      "poster_path": "/S21BfLrJSD9njucBfY3CKqp8rD.jpg",
-      "release_date": "2025-05-15",
-      "title": "Desert Dawn",
-      "video": false,
-      "vote_average": 0,
-      "vote_count": 0
+      "title": "Má Influência",
+      "overview": "Um ex-presidiário recebe a chance de recomeçar ao ser contratado para proteger uma rica herdeira de um perseguidor. Difícil vai ser resistir à química entre eles.",
+      "release_date": "2025-01-24",
+      "poster_path": "/dKp87mqKqNygSNiQH4pMfIFAcyJ.jpg",
+      "id": 1471016
     },
     {
-      "adult": false,
-      "backdrop_path": "/1hBtO9tXP60IFBZD27OsbaBmxs5.jpg",
-      "genre_ids": [
-        37,
-        28
-      ],
-      "id": 1414048,
-      "original_language": "en",
-      "original_title": "Day of Reckoning",
-      "overview": "",
-      "popularity": 222.8271,
-      "poster_path": "/cVSjSQryFUERYSdOmdgJ2m0eBte.jpg",
-      "release_date": "2025-03-28",
-      "title": "Day of Reckoning",
-      "video": false,
-      "vote_average": 6.583,
-      "vote_count": 12
+      "title": "Nas Terras Perdidas",
+      "overview": "Uma rainha, desesperada para ganhar o dom da mudança de forma, toma uma atitude ousada: contrata a feiticeira Gray Alys, uma mulher tão temida quanto poderosa. Enviada para a selva fantasmagórica das Terras Perdidas, Alys e seu guia, o andarilho Boyce, devem enganar e lutar contra o homem e o diabo em uma fábula que explora a natureza do bem e do mal, da dívida e da satisfação, do amor e da perda.",
+      "release_date": "2025-02-27",
+      "poster_path": "/hSljn1jfCClIbHNdlz6cWQEjncV.jpg",
+      "id": 1471017
     },
     {
-      "adult": false,
-      "backdrop_path": "/eDBZN0TbWkxoAB0qIDFagVcPPTN.jpg",
-      "genre_ids": [
-        27,
-        14,
-        35,
-        12
-      ],
-      "id": 1153714,
-      "original_language": "en",
-      "original_title": "Death of a Unicorn",
-      "overview": "Elliot, funcionário de uma empresa farmacêutica, viaja com sua filha Ridley para uma reunião de emergência com seu chefe ultra-rico. Ao longo do caminho, eles acidentalmente atingem um unicórnio, e logo descobrem que o sangue, o corpo e o chifre do animal têm propriedades milagrosamente restaurativas.",
-      "popularity": 220.9381,
-      "poster_path": "/bjKuDqkYoI7Kk18LUaQsQCZvXU7.jpg",
-      "release_date": "2025-03-27",
-      "title": "Morte de um Unicórnio",
-      "video": false,
-      "vote_average": 6.164,
-      "vote_count": 122
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/6dC7ULfiutxwEAs7LjWHL2Tc7Zv.jpg",
-      "genre_ids": [
-        27,
-        35
-      ],
-      "id": 1124620,
-      "original_language": "en",
-      "original_title": "The Monkey",
-      "overview": "Dois irmãos gêmeos encontram um macaco de brinquedo que pertenceu ao seu pai. Quando percebem coisas sinistras acontecendo à sua volta, os dois se desfazem do boneco e seguem com suas vidas. Após anos afastados, eventos terríveis começam a se desdobrar e os irmãos precisam se reunir para destruir o brinquedo antes que todos que amam morram.",
-      "popularity": 210.7599,
-      "poster_path": "/rTrmXgAt6ZjbzfvGz6hbzkqMEW9.jpg",
-      "release_date": "2025-02-14",
-      "title": "O Macaco",
-      "video": false,
-      "vote_average": 5.888,
-      "vote_count": 555
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/oUgVgGaNqV9Y0Zdyjc1kCpzIe4G.jpg",
-      "genre_ids": [
-        27,
-        10402,
-        53
-      ],
-      "id": 1233413,
-      "original_language": "en",
-      "original_title": "Sinners",
-      "overview": "Dispostos a deixar suas vidas conturbadas para trás, irmãos gêmeos retornam à sua cidade natal para recomeçar suas vidas do zero, quando descobrem que um mal ainda maior está à espera deles para recebê-los de volta.",
-      "popularity": 209.6099,
-      "poster_path": "/a9kYEboW1TQaeilGYUAx1MO0DUp.jpg",
-      "release_date": "2025-04-16",
-      "title": "Pecadores",
-      "video": false,
-      "vote_average": 7.634,
-      "vote_count": 521
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/svLj9iyRmmeNVRsMreANn7DPPZE.jpg",
-      "genre_ids": [
-        27
-      ],
-      "id": 1356236,
-      "original_language": "en",
-      "original_title": "Saint Catherine",
-      "overview": "",
-      "popularity": 206.1029,
-      "poster_path": "/hBJdzKPeDaC96AzlrtMWBomYSZV.jpg",
-      "release_date": "2025-04-11",
-      "title": "Saint Catherine",
-      "video": false,
-      "vote_average": 6.273,
-      "vote_count": 11
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/Zes06xI18u47pblwRGTtqRm0R8.jpg",
-      "genre_ids": [
-        28,
-        53,
-        80,
-        18
-      ],
-      "id": 1276073,
-      "original_language": "ja",
-      "original_title": "新幹線大爆破",
-      "overview": "Um trem-bala rumo a Tóquio corre risco de explosão se a velocidade ficar abaixo de 100 km/h, e as autoridades correm contra o tempo para salvar todas as pessoas a bordo.",
-      "popularity": 198.3822,
-      "poster_path": "/dkmuktrqxdxO8ncGnpezrHdFYYa.jpg",
-      "release_date": "2025-04-23",
-      "title": "Explosão no Trem-Bala",
-      "video": false,
-      "vote_average": 6.877,
-      "vote_count": 130
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/hdHIjZxq3SWFqpAz4NFhdbud0iz.jpg",
-      "genre_ids": [
-        27,
-        878
-      ],
-      "id": 348,
-      "original_language": "en",
-      "original_title": "Alien",
-      "overview": "Quando a tripulação da sonda espacial Nostromo responde a um pedido de socorro vindo de um planeta inóspito, eles descobrem uma forma de vida mortal que se reproduz dentro de humanos. Agora, a tripulação deve lutar para permanecer viva e impedir que a criatura chegue até a Terra.",
-      "popularity": 191.1943,
-      "poster_path": "/yH05Ft4egz5DYy4SLWYYuVMoGqC.jpg",
-      "release_date": "1979-05-25",
-      "title": "Alien: O Oitavo Passageiro",
-      "video": false,
-      "vote_average": 8.163,
-      "vote_count": 15244
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/7TF4p86ZafnxFuNqWdhpHXFO244.jpg",
-      "genre_ids": [
-        18,
-        80
-      ],
-      "id": 769,
-      "original_language": "en",
-      "original_title": "GoodFellas",
-      "overview": "A história real de Henry Hill, um garoto meio irlandês e meio siciliano do Brooklyn que é adotado por gangsters do bairro ainda jovem e sobe na hierarquia de uma família da máfia sob a orientação de Jimmy Conway.",
-      "popularity": 189.4178,
-      "poster_path": "/lanYBnyCcqkaFqz66B8PrBRCtCW.jpg",
-      "release_date": "1990-09-12",
-      "title": "Os Bons Companheiros",
-      "video": false,
-      "vote_average": 8.456,
-      "vote_count": 13340
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/qAzYK4YPSWDc7aa4R43LcwRIAyb.jpg",
-      "genre_ids": [
-        28,
-        12,
-        878
-      ],
-      "id": 299537,
-      "original_language": "en",
-      "original_title": "Captain Marvel",
-      "overview": "Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se no meio de uma batalha entre seu povo e os Skrulls. Ao tentar impedir uma invasão de larga escala na Terra, em 1995, ela tem memórias recorrentes de uma outra vida, como Carol Danvers, agente da Força Aérea norte-americana. Com a ajuda de Nick Fury, Capitã Marvel precisa descobrir os segredos de seu passado e pôr um fim ao conflito intergalático com os Skrulls.",
-      "popularity": 181.0688,
-      "poster_path": "/n3BisLdTMceUWcdP1ooP5VwN9JF.jpg",
-      "release_date": "2019-03-06",
-      "title": "Capitã Marvel",
-      "video": false,
-      "vote_average": 6.802,
-      "vote_count": 15999
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/ddIkmH3TpR6XSc47jj0BrGK5Rbz.jpg",
-      "genre_ids": [
-        10752,
-        28,
-        18
-      ],
-      "id": 374720,
-      "original_language": "en",
-      "original_title": "Dunkirk",
-      "overview": "Durante a Segunda Guerra Mundial, em maio de 1940, cerca de 400.000 soldados britânicos, franceses e belgas viram-se cercados pelas tropas alemãs na bolsa de Dunquerque. A Operação Dínamo foi lançada para evacuar a Força Expedicionária Britânica para Inglaterra. A história segue os destinos entrelaçados de soldados, pilotos, marinheiros e civis britânicos durante a evacuação de Dunquerque.",
-      "popularity": 178.6189,
-      "poster_path": "/kO6ewhlh7OIGRRbHwylDafEM1QG.jpg",
-      "release_date": "2017-07-19",
-      "title": "Dunkirk",
-      "video": false,
-      "vote_average": 7.45,
-      "vote_count": 16764
+      "title": "Exterritorial",
+      "overview": "O filho da ex-militar Sara desapareceu em um consulado americano. Ela fará de tudo para encontrá-lo, inclusive encarar uma conspiração sombria.",
+      "release_date": "2025-04-29",
+      "poster_path": "/wqllCospPViEt7AeYIl4ZskKdSj.jpg",
+      "id": 1471018
     }
   ]
 }

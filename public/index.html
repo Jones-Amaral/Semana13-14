@@ -51,7 +51,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active text-danger" aria-current="page" href="#">Início</a>
+                                <a class="nav-link active text-danger" aria-current="page" href="index.html">Início</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-danger" href="#">Filmes</a>
@@ -74,7 +74,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled text-danger" aria-disabled="true">Documentários</a>
+                                <a class="nav-link text-danger" href="cadastro_NetFrix.html">Página de Cadastro</a>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
@@ -216,7 +216,7 @@
             .then(data => {
                 const filmes = data // filmes estão aqui dentro
 
-                const bannerFilme = filmes[0];
+                const bannerFilme = filmes[1];
                 const bannerImg = document.getElementById("bannerPrincipal");
                 const bannerDesc = document.getElementById("descricaoBanner");
 
@@ -229,8 +229,9 @@
                 let strDestaque = ""
                 let strParaVoce = ""
 
-                for (let i = 1; i < 7; i++) {
+                for (let i = 2; i < 6; i++) {
                     const filmeDest = filmes[i] //filme individual recebe filmes em indice i(do for)
+                    if(!filmeDest) continue;
                     strDestaque += `
                     <div class="col-sm-6 col-md-4 col-xl-3 col-xs-12 card border border-0 card-fixo m-3" style="width: 17rem;">
                         <a href="pag-detalhes.html?id=${filmeDest.id}" target="blank">
@@ -245,8 +246,9 @@
             `
                 }
 
-                for (let i = 7; i < 13; i++) {
+                for (let i = 6; i <= 9; i++) {
                     const filmeVoce = filmes[i]
+                    if(!filmeVoce) continue;
                     strParaVoce += ` 
                             <div class="col-sm-6 col-md-4 col-xl-3 col-xs-12 card border border-0 card-fixo m-3" style="width: 17rem;">
                                 <a href="pag-detalhes.html?id=${filmeVoce.id}" target="blank">
