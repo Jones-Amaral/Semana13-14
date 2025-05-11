@@ -5,24 +5,24 @@ Nesta atividade, você irá completar o projeto anterior permitindo cadastrar e 
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: João Vitor Alves Amaral
+- Matricula: 882594
+- Proposta de projeto escolhida: Site de Streaming de Vídeos
+- Breve descrição sobre seu projeto: Criação de um site inspirado em plataforma de Streaming inspirado em uma das maiores plataformas atuais, utilizando CRUD em JSON Server.
 
 **Print do testes da API com Postman ou similar**
 
-<<  COLOQUE A IMAGEM GET AQUI >>
+![print-GET](public/assets/img/POST-teste.png)
 
-<<  COLOQUE A IMAGEM POST AQUI >>
+![print-POST](public/assets/img/POST-teste.png)
 
-<<  COLOQUE A IMAGEM PUT AQUI >>
+![print-PUT](public/assets/img/PUT-teste.png)
 
-<<  COLOQUE A IMAGEM DELETE AQUI >>
+![print-DELETE](public/assets/img/DELETE-teste.png)
 
 **Print da aba NETWORK com requisições Fetch/XHR de POST**
 
-<<  COLOQUE A IMAGEM AQUI >>
+![print-NETWORK](public/assets/img/aba-NETWORK.png)
 
 ## **Orientações Gerais**
 
