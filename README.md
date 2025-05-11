@@ -12,7 +12,7 @@ Nesta atividade, você irá completar o projeto anterior permitindo cadastrar e 
 
 **Print do testes da API com Postman ou similar**
 
-![print-GET](public/assets/img/POST-teste.png)
+![print-GET](public/assets/img/GET-teste.png)
 
 ![print-POST](public/assets/img/POST-teste.png)
 
