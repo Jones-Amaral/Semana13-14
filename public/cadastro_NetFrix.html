@@ -145,6 +145,9 @@
                     <h3>Banner</h3>
                     <input type="text" id="inputBanner" placeholder="Caminho do filme" required>
 
+                    <h3>Nota</h3>
+                    <input type="text" id="inputNota" placeholder="Nota do filme" required>
+
                     <br>
                     <button type="button" class="btnInserir" id="btnInserir">Inserir</button>
                     <button type="button" class="btnAlterar" id="btnAlterar">Alterar</button>
@@ -188,6 +191,7 @@
                         <td>Nome</td>
                         <td>Descrição</td>
                         <td>Data Lanç</td>
+                        <td>Nota</td>
                         <td>Banner</td>
                     </tr>
                 </table>
@@ -202,6 +206,7 @@
                         <td>${filme.title}</td>
                         <td class="limitar-texto">${filme.overview}</td>
                         <td>${filme.release_date}</td>
+                        <td>${filme.vote_average}</td>
                         <td><img src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="Banner" width="100"></td>
                     </tr>
                 `;
@@ -216,7 +221,8 @@
                     document.getElementById('inputTitle').value = colunas[1].innerText;
                     document.getElementById('inputDesc').value = colunas[2].innerText;
                     document.getElementById('inputData').value = colunas[3].innerText;
-                    const bannerSrc = colunas[4].querySelector('img').getAttribute('src').replace("https://image.tmdb.org/t/p/w500", "");
+                    document.getElementById('inputNota').value = colunas[4].innerText;
+                    const bannerSrc = colunas[5].querySelector('img').getAttribute('src').replace("https://image.tmdb.org/t/p/w500", "");
                     document.getElementById('inputBanner').value = bannerSrc;
                 });
             });
@@ -237,8 +243,8 @@
                 const desc = document.getElementById("inputDesc").value;
                 const data = document.getElementById("inputData").value;
                 const banner = document.getElementById("inputBanner").value;
-
-                if (!nome || !desc || !data || !banner) {
+                const nota = document.getElementById("inputNota").value;
+                if (!nome || !desc || !data || !banner || !nota) {
                     alert("Preencha todos os campos.");
                     return;
                 }
@@ -247,7 +253,8 @@
                     title: nome,
                     overview: desc,
                     release_date: data,
-                    poster_path: banner
+                    poster_path: banner,
+                    vote_average: nota
                 };
 
                 createFilme(filme, carregarFilmes);
@@ -265,7 +272,8 @@
                     title: document.getElementById("inputTitle").value,
                     overview: document.getElementById("inputDesc").value,
                     release_date: document.getElementById("inputData").value,
-                    poster_path: document.getElementById("inputBanner").value
+                    poster_path: document.getElementById("inputBanner").value,
+                    poster_path: document.getElementById("inputNota").value
                 };
 
                 updateFilme(parseInt(id), filme, carregarFilmes);
