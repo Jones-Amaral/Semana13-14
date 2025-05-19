@@ -74,6 +74,9 @@
                             <li class="nav-item">
                                 <a class="nav-link text-danger" href="cadastro_NetFrix.html">Página de Cadastro</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" href="página-gráfico.html">Gráfico</a>
+                            </li>
                         </ul>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Procure aqui..."
@@ -148,6 +151,9 @@
                     <h3>Nota</h3>
                     <input type="text" id="inputNota" placeholder="Nota do filme" required>
 
+                    <h3>Quantidade de Votos</h3>
+                    <input type="text" id="inputVotos" placeholder="Quantidade de Avaliações" required>
+
                     <br>
                     <button type="button" class="btnInserir" id="btnInserir">Inserir</button>
                     <button type="button" class="btnAlterar" id="btnAlterar">Alterar</button>
@@ -192,6 +198,7 @@
                         <td>Descrição</td>
                         <td>Data Lanç</td>
                         <td>Nota</td>
+                        <td>Votos</td>
                         <td>Banner</td>
                     </tr>
                 </table>
@@ -207,6 +214,7 @@
                         <td class="limitar-texto">${filme.overview}</td>
                         <td>${filme.release_date}</td>
                         <td>${filme.vote_average}</td>
+                        <td>${filme.vote_count}</td>
                         <td><img src="https://image.tmdb.org/t/p/w500${filme.poster_path}" alt="Banner" width="100"></td>
                     </tr>
                 `;
@@ -222,7 +230,8 @@
                     document.getElementById('inputDesc').value = colunas[2].innerText;
                     document.getElementById('inputData').value = colunas[3].innerText;
                     document.getElementById('inputNota').value = colunas[4].innerText;
-                    const bannerSrc = colunas[5].querySelector('img').getAttribute('src').replace("https://image.tmdb.org/t/p/w500", "");
+                    document.getElementById('inputVotos').value = colunas[5].innerText;
+                    const bannerSrc = colunas[6].querySelector('img').getAttribute('src').replace("https://image.tmdb.org/t/p/w500", "");
                     document.getElementById('inputBanner').value = bannerSrc;
                 });
             });
@@ -244,6 +253,7 @@
                 const data = document.getElementById("inputData").value;
                 const banner = document.getElementById("inputBanner").value;
                 const nota = document.getElementById("inputNota").value;
+                const voto = document.getElementById("inputVotos").value;
                 if (!nome || !desc || !data || !banner || !nota) {
                     alert("Preencha todos os campos.");
                     return;
@@ -254,7 +264,8 @@
                     overview: desc,
                     release_date: data,
                     poster_path: banner,
-                    vote_average: nota
+                    vote_average: nota,
+                    vote_count: voto,
                 };
 
                 createFilme(filme, carregarFilmes);
@@ -273,7 +284,8 @@
                     overview: document.getElementById("inputDesc").value,
                     release_date: document.getElementById("inputData").value,
                     poster_path: document.getElementById("inputBanner").value,
-                    vote_average: document.getElementById("inputNota").value
+                    vote_average: document.getElementById("inputNota").value,
+                    vote_count: document.getElementById("inputVotos").value
                 };
 
                 updateFilme(parseInt(id), filme, carregarFilmes);
