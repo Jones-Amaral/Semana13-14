@@ -1,10 +1,12 @@
 {
   "filmes": [
     {
-      "title": "Exemplo de Alteração CRUD",
+      "title": "Alterei aqui",
       "overview": "Um roubo de drogas sai do controle, levando um policial a encarar o submundo de uma cidade corrupta para salvar o filho de um político importante.",
       "release_date": "2025-04-24",
-      "poster_path": "/8TcTdvMOZvZ6kDLEm0SZlkNm9Vu.jpg",
+      "poster_path": "/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
+      "vote_average": "6.5",
+      "vote_count": "230",
       "id": 668489
     },
     {
@@ -130,6 +132,8 @@
       "overview": "Agora que Chris e sua namorada, Rose, chegaram à fase de conhecer os pais no namoro, ela o convida para um fim de semana no interior com Missy e Dean. A princípio, Chris acha que o comportamento excessivamente agradável dos dois como tentativas nervosas de lidar com o relacionamento inter-racial da filha, mas, conforme o fim de semana avança, uma série de descobertas cada vez mais perturbadoras o levam a uma verdade que ele jamais poderia ter imaginado.",
       "release_date": "2017-02-24",
       "poster_path": "/7hmmKIWDHi7jzOiGzffZesXKKfp.jpg",
+      "vote_average": "9.0",
+      "vote_count": "1231",
       "id": 1471015
     },
     {
@@ -137,6 +141,8 @@
       "overview": "Um ex-presidiário recebe a chance de recomeçar ao ser contratado para proteger uma rica herdeira de um perseguidor. Difícil vai ser resistir à química entre eles.",
       "release_date": "2025-01-24",
       "poster_path": "/dKp87mqKqNygSNiQH4pMfIFAcyJ.jpg",
+      "vote_average": "7.43",
+      "vote_count": "249",
       "id": 1471016
     },
     {
@@ -144,6 +150,8 @@
       "overview": "Uma rainha, desesperada para ganhar o dom da mudança de forma, toma uma atitude ousada: contrata a feiticeira Gray Alys, uma mulher tão temida quanto poderosa. Enviada para a selva fantasmagórica das Terras Perdidas, Alys e seu guia, o andarilho Boyce, devem enganar e lutar contra o homem e o diabo em uma fábula que explora a natureza do bem e do mal, da dívida e da satisfação, do amor e da perda.",
       "release_date": "2025-02-27",
       "poster_path": "/hSljn1jfCClIbHNdlz6cWQEjncV.jpg",
+      "vote_average": "5.6",
+      "vote_count": "412",
       "id": 1471017
     },
     {
@@ -151,6 +159,8 @@
       "overview": "O filho da ex-militar Sara desapareceu em um consulado americano. Ela fará de tudo para encontrá-lo, inclusive encarar uma conspiração sombria.",
       "release_date": "2025-04-29",
       "poster_path": "/wqllCospPViEt7AeYIl4ZskKdSj.jpg",
+      "vote_average": "8.5",
+      "vote_count": "17",
       "id": 1471018
     }
   ]

@@ -44,7 +44,7 @@ header #userToggle {
 
 /* Main */
 
-.formulario-container {
+.container {
     margin-top: 80px;
     display: grid;
     width: 100%;
@@ -53,14 +53,14 @@ header #userToggle {
     grid-template-columns: 1fr 3fr 1fr;
 }
 
-.formulario-container .centro {
+.container .centro {
     background-color: #b8adad;
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
-.formulario-container {
+.container {
     margin-bottom: 50px;
 }
 
