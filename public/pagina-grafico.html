@@ -171,11 +171,11 @@
                 const filmes = data;
                 const ctx = document.getElementById("myChart");
 
-                const labels = filmes.slice(0, 5).map(filme => filme.title);
+                const labels = filmes.slice(1, 6).map(filme => filme.title);
                 // pega a fatia de 0 a 5 dentro do filme buscando o titulos 
-                const notas = filmes.slice(0, 5).map(filme => filme.vote_average);
+                const notas = filmes.slice(1, 6).map(filme => filme.vote_average);
                 // pega a fatia de 0 a 5 dentro do filme buscando a votação
-                const votos = filmes.slice(0, 5).map(filme => filme.vote_count);
+                const votos = filmes.slice(1, 6).map(filme => filme.vote_count);
                 // pega a fatai de 0 a 5 dentro de filmes buscando a quantidade de votos
                 new Chart(ctx, {
                     type: "bar",
@@ -191,7 +191,7 @@
                                 "rgba(178, 40, 40)",
                                 "rgba(200, 60, 60)",
                                 "rgba(70, 80, 80)",
-                                "rgba(250, 100, 100)",
+                                "rgba(250, 100, 100)"
                             ]
                         }],
                         options: {
@@ -219,7 +219,7 @@
                                 "rgba(178, 110, 192)",
                                 "rgba(200, 60, 120)",
                                 "rgba(135, 162, 210)",
-                                "rgba(250, 230, 100)",
+                                "rgba(250, 230, 100)"
                             ]
                         }],
                         options: {
