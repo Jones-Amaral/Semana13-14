@@ -160,81 +160,103 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/scripts/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        function init() {
+            fetch('http://localhost:3000/filmes')
+                .then(res => res.json())
+                .then(data => {
+                    const filmes = data;
+                    const ctx = document.getElementById("myChart");
+
+                    const labels = filmes.slice(0, 10).map(filme => filme.title);
+                    // pega a fatia de 0 a 5 dentro do filme buscando o titulos 
+                    const notas = filmes.slice(0, 10).map(filme => filme.vote_average);
+                    // pega a fatia de 0 a 5 dentro do filme buscando a votação
+
+                    /* Array com quantidade de cada gênero */
+                    const generoFilme = [0, 0, 0, 0, 0, 0];
+
+                    /* Soma de cada item dentro do Array com base no id do gênero */
+                    filmes.forEach(filme => {
+                        switch (filme.genre_id) {
+                            case 1:
+                                generoFilme[0]++;
+                                break;
+                            case 2:
+                                generoFilme[1]++;
+                                break;
+                            case 3:
+                                generoFilme[2]++;
+                                break;
+                            case 4:
+                                generoFilme[3]++;
+                                break;
+                            case 5:
+                                generoFilme[4]++;
+                                break;
+                            case 6:
+                                generoFilme[5]++;
+                                break;
+                        }
+                    });
+
+                    /* Gráfico 1 */
+                    new Chart(ctx, {
+                        type: "bar",
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: "Quantidade de Avaliações por Usuários",
+                                data: notas,
+                                borderWidth: 1,
+                                backgroundColor: [
+                                    "rgba(156, 0, 0)",
+                                    "rgba(125, 20, 20)",
+                                    "rgba(178, 40, 40)",
+                                    "rgba(200, 60, 60)",
+                                    "rgba(70, 80, 80)",
+                                    "rgba(250, 100, 100)"
+                                ]
+                            }],
+                            options: {
+                                scales: {
+                                    y: {
+                                        beginAtZero: true,
+                                        max: 1000
+                                    }
+                                }
+                            }
+                        }
+                    })
+
+                    /* Gráfico 2 */
+                    const ctx2 = document.getElementById("myChart2")
+                    new Chart(ctx2, {
+                        type: "doughnut",
+                        data: {
+                            labels: ["Ação", "Documentário", "Aventura", "Heróis", "Drama", "Romance"],
+                            datasets: [{
+                                label: 'Gêneros',
+                                data: generoFilme,
+                                backgroundColor: [
+                                    'rgb(255, 99, 132)',
+                                    'rgb(54, 162, 235)',
+                                    'rgb(255, 205, 86)',
+                                    'rgb(255, 142, 176)',
+                                    'rgb(125, 61, 14)',
+                                    "rgba(178, 40, 40)"
+                                ],
+                                hoverOffset: 6
+                            }]
+                        }
+                    });
+                }).catch(err => console.error(err))
+        }
+    </script>
+
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    function init() {
-        fetch('http://localhost:3000/filmes')
-            .then(res => res.json())
-            .then(data => {
-                const filmes = data;
-                const ctx = document.getElementById("myChart");
-
-                const labels = filmes.slice(1, 6).map(filme => filme.title);
-                // pega a fatia de 0 a 5 dentro do filme buscando o titulos 
-                const notas = filmes.slice(1, 6).map(filme => filme.vote_average);
-                // pega a fatia de 0 a 5 dentro do filme buscando a votação
-                const votos = filmes.slice(1, 6).map(filme => filme.vote_count);
-                // pega a fatai de 0 a 5 dentro de filmes buscando a quantidade de votos
-                new Chart(ctx, {
-                    type: "bar",
-                    data: {
-                        labels: labels,
-                        datasets: [{
-                            label: "Quantidade de Avaliações por Usuários",
-                            data: votos,
-                            borderWidth: 1,
-                            backgroundColor: [
-                                "rgba(156, 0, 0)",
-                                "rgba(125, 20, 20)",
-                                "rgba(178, 40, 40)",
-                                "rgba(200, 60, 60)",
-                                "rgba(70, 80, 80)",
-                                "rgba(250, 100, 100)"
-                            ]
-                        }],
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true,
-                                    max: 1000
-                                }
-                            }
-                        }
-                    }
-                })
-                const ctx2 = document.getElementById("myChart2")
-                new Chart(ctx2, {
-                    type: "bar",
-                    data: {
-                        labels: labels,
-                        datasets: [{
-                            label: "Avaliações dos Usuários",
-                            data: notas,
-                            borderWidth: 1,
-                            backgroundColor: [
-                                "rgba(156, 215, 211)",
-                                "rgba(125, 124, 164)",
-                                "rgba(178, 110, 192)",
-                                "rgba(200, 60, 120)",
-                                "rgba(135, 162, 210)",
-                                "rgba(250, 230, 100)"
-                            ]
-                        }],
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true,
-                                    max: 10                                    
-                                }
-                            }
-                        }
-                    }
-                })
-            }
-            ).catch(err => console.error(err))
-    }
-</script>
 
 </html>

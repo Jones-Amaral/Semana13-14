@@ -52,7 +52,9 @@ header #userToggle {
     text-align: center;
     grid-template-columns: 1fr 3fr 1fr;
 }
-
+#myChart2, #myChart{
+margin: 20px;
+}
 .container .centro {
     background-color: #b8adad;
     width: 100%;
